@@ -1,0 +1,25 @@
+# dependencias
+node_modules/
+
+# build de Next.js
+.next/
+out/
+
+# variables de entorno (NUNCA subir llaves)
+.env
+.env*.local
+
+# Vercel
+.vercel
+
+# sistema y editores
+.DS_Store
+*.log
+npm-debug.log*
+.idea/
+.vscode/
+
+# pruebas y TypeScript
+coverage/
+*.tsbuildinfo
+next-env.d.ts
