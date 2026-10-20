@@ -19,13 +19,13 @@ jobs:
           node-version: 22
 
       - name: Instalar dependencias
-        run: npm install --no-audit --no-fund
+        run: bash .github/ci-run.sh "Instalacion" npm install --no-audit --no-fund
 
       - name: Build
-        run: npm run build
+        run: bash .github/ci-run.sh "Build" npm run build
 
       - name: Tipos
-        run: npm run typecheck
+        run: bash .github/ci-run.sh "Tipos" npm run typecheck
 
       - name: Pruebas
-        run: npm test
+        run: bash .github/ci-run.sh "Pruebas" npm test
